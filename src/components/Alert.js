@@ -2,7 +2,7 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export const Alert = (props) => {
-    props.setToast!=null&&toast.success(`${props.setToast}`, {
+    props.setToast!==null&&toast.success(`${props.setToast}`, {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -13,7 +13,7 @@ export const Alert = (props) => {
         });
     return (
         
-        props.setToast!=null&&<div>
+        props.setToast!==null&&<div>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}

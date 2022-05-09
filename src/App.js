@@ -9,10 +9,12 @@ function App() {
   const [setToast, setsetToast] = useState(null)//for toast 
   const changeC=()=>{
     if(color==='light'){
+      console.log("in if")
       setcolor('dark')
       setsetToast("Dark Mode Successfully Enabled")
       document.body.style.backgroundColor="#00224b"
     }else{
+      console.log("in else")
       setcolor('light')
       document.body.style.backgroundColor="white"
       setsetToast("Light Mode Successfully Enabled")

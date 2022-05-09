@@ -19,7 +19,7 @@ export const Navbar = (props) => {
                         </li>
                     </ul>
                     <div className="custom-control custom-switch">
-                        <input type="checkbox" className="custom-control-input" id="customSwitches" onClick={props.changeC}/>
+                        <input type="checkbox" className="custom-control-input" id="customSwitches" onClick={()=>{props.changeC()}}/>
                         <label className={`custom-control-label  text-${props.color==="dark"?"light":"dark"}`} htmlFor="customSwitches">{props.color==='light'?"Dark Mode":"Light Mode"} </label>
                     </div>
 

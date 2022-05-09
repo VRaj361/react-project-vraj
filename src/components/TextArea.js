@@ -35,7 +35,7 @@ export const TextArea = (props) => {
                 <div className="form-group">
                     <textarea className={`form-control bg-${props.color==='light'?'light':'dark'} text-${props.color==='light'?'dark':'light'}`} value={text} id="exampleFormControlTextarea1" rows="10" placeholder='Enter text here' onChange={handleEvent}></textarea>
                 </div>
-                <button className={`btn btn-primary mr-4 `} onClick={handleUppercase}>Convert to Uppercase</button>
+                <button className={`btn btn-primary mr-4 `} onClick={()=>{handleUppercase()}}>Convert to Uppercase</button>
                 <button className={`btn btn-primary mr-4 `} onClick={handleLowercase}>Convert to Lowercase</button>
                 <button className={`btn btn-primary mr-4 `} onClick={handleClear}>Clear Text</button>
                 <button className={`btn btn-primary mr-4 `} onClick={handleCopy}>Copy Text</button>
